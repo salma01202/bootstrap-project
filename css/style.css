@@ -1,0 +1,326 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ .dropdown{
+    border-color: rgb(184, 145, 182) !important;
+ }
+.dropdown-menu{
+ background-color: rgb(255, 179, 249); 
+ opacity: 0.6;
+}
+.header-actions .btn:hover{
+  background-color:rgb(207, 172, 207)!important; 
+
+}
+.modal-footer .btn{
+  background-color: rgb(181, 114, 181);
+  color: #fff;
+}
+.modal-footer .btn1-modal{
+  margin-right: 20.7rem;
+}
+.modal-footer .btn:hover{
+   background-color:  rgb(202, 126, 202)
+
+}
+
+.form-check{
+    margin-left: 1rem !important;
+    
+}
+
+.form-check-input {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  box-shadow: grey !important;
+}
+
+/* اللون عند التحديد */
+.form-check-input:checked {
+  background-color: #875187 !important; /* اللون الموف */
+  border-color: #616161 !important;
+}
+
+/* تأثير التمركز والظل عند التركيز */
+.form-check-input:focus {
+  box-shadow: 0 0 0 0.25rem rgba(220, 220, 220, 0.5);
+}
+
+/* لما يكون الـ switch مقفول (unchecked) */
+.form-check-input:not(:checked) {
+  
+  border-color: rgb(182, 182, 182) !important;       /* عشان يبان الحدود بنفس اللون */
+}
+
+.carousel-icon{
+    display: block !important;
+    position: fixed;
+    top: 200px;   
+    right: 20px;  
+    z-index: 1000;
+    pointer-events: none;
+}
+.carousel-icon li{
+    list-style: none !important;
+    padding-left: 88rem;
+    padding-top: 1rem;
+}
+.carousel-icon li a i{                            
+    font-size: 3rem !important;
+    color: rgb(198, 177, 202);
+}
+.carousel-icon ul li a:hover i {
+  color: #a35bc0; /* اللون الجديد عند مرور الماوس */
+}
+
+.carousel-icon a,.carousel-icon i {
+  pointer-events: auto;
+}
+
+.carousel-caption{
+    background-color: rgb(185, 148, 188);               
+    opacity: 0.8;
+}
+
+.welcome{
+    height: 24rex;
+    background-color: rgb(249, 229, 254);
+}
+
+.Popular{
+    background-color: rgb(107, 78, 134);
+    height: 6rem;
+    text-align: center;
+}
+.write-order{
+    background-color: rgb(216, 203, 229);
+    height: 4rem;
+    text-align: center;
+}
+
+.accordion-button2{
+    box-shadow: inset 0 7px 11px -7px rgba(0,0,0,0.4);
+}
+/* زرار الـ accordion لما يتفتح (active) */
+.accordion-button:not(.collapsed) {
+  background-color: #7c538d;   
+  color: #fff;                 /* النص أبيض عشان يبان */
+}
+
+/* لما تضغط عليه (focus) */
+.accordion-button:focus {
+  box-shadow: 0 0 0 0.25rem rgba(152, 120, 165, 0.5); /* ظل موف أغمق */
+}
+/* ///////////////////////////// */
+.write-comment{
+    background-color: rgb(216, 203, 229);
+    height: 4rem;
+    text-align: center;
+}
+.Image{
+    
+    background-image: url(../images/desert4.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+/* /////////////////////start Famous /////////////////////////////////////// */
+
+.title-Famous{
+    height: 6rem;
+    background-color: rgb(107, 78, 134);
+}
+.row{
+    position: relative;
+}
+
+.card-body-Famous{
+   color: blueviolet; 
+}
+.Image2{  
+    background-image: url(../images/desert5.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+/* ////////////////////////////////////////////////////// */
+
+.thanks-parnet{
+   margin: 4rem 0 9rem 0;
+}
+.thanks-img{                 /* <===== position relatived بندي  للاب المباشر علي طول  */ 
+    position: relative;
+}
+
+.thanks-overlay{
+    position: absolute;     /*دة علشان العصر يبقي فوق العنصر التاني */
+    top: 0;                  /*  و دي علشان يبدا من فوق من علي الشمال يعني من اول حدود الصورة*/
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7) ;
+    color: white;
+}
+
+.thanks-info{
+    margin-top: 12rem !important;
+}
+
+.thanks-overlay:hover{
+    background-color:rgba(79, 53, 103, 0.7);
+}
+.thanks-item:hover {
+    transform: scale(0.9);
+}
+/* ///////////////// start sce new /////////////////////////////////////////////// */
+/* الكارد الأساسي */
+.card-new , .card-new2 ,.card-new3 ,.card-new4{
+    height: 25rem; 
+    border-radius: 15px !important;   /* كل الحواف ناعمة */
+    overflow: hidden !important;      /* علشان الصورة جوا الكارد تلتزم بالانحناء */
+}
+/* ألوان الخلفيات */
+.card-new{
+    background-color: rgb(253, 251, 255);
+}
+.card-new2{
+    background-color: rgb(255, 254, 248);
+}
+.card-new3{
+    background-color: rgb(255, 248, 253);
+}
+.card-new4{
+    background-color: rgb(255, 250, 246);
+}
+/* صور اول وتالت كارد */
+.img-new {
+  width: 350px;
+  overflow: hidden;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.img-new img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: skew(5deg);
+  transform-origin: top left;
+  transition: 0.3s ;
+}
+.img-new img:hover {
+  transform: skew(5deg) scale(1.05);
+}
+/* الصور تاني ورابع كارد */
+.img-new2 {
+  position: relative;
+  overflow: hidden;
+  flex: 0 0 26%;  /* الميل بسيط من ناحية اليمين */
+  clip-path: polygon(0 0, 100% 0, 92% 100%, 0% 100%);
+}
+.img-new2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.img-new2 img:hover {
+  transform: scale(1.05);  
+}
+/* العناوين والنص */
+.card-text, .card-title {
+  color: #333333;
+}
+
+/* الأزرار */
+.btn-new ,.btn-new2 ,.btn-new3 ,.btn-new4 {
+  margin-top: 4rem; 
+}
+.btn-new .btn {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.btn-new .btn:hover {
+  background-color: rgb(113, 94, 131);
+}
+.btn-new2 .btn:hover{
+    background-color: rgb(114, 111, 22);
+}
+.btn-new3 .btn:hover{
+    background-color: rgb(117, 51, 74);
+}
+.btn-new4 .btn:hover{
+    background-color: rgb(134, 77, 27); 
+}
+.btn-news4{
+    color: rgb(245, 209, 141)}
+.btn-news3{
+    color: rgb(226, 191, 209);
+}
+.btn-news2{
+    color: rgb(206, 206, 159);
+}
+.btn-news1{
+    color: rgb(212, 169, 255);
+}
+
+/* الخطوط (line) */
+.line-new,.line-new2,.line-new3,.line-new4 {
+  width: 3rem;
+  height: 6px;
+  border-radius: 50px;
+  transition: width 0.6s ease;
+}
+/* ألوان الخطوط */
+.line-new  { background-color: rgb(173, 129, 200); }
+.line-new2 { background-color: rgb(228, 209, 103); }
+.line-new3 { background-color: rgb(225, 131, 205); }
+.line-new4 { background-color: rgb(228, 158, 103); }
+/* تأثيرالخطوط hover */
+.card-new:hover  .line-new  { width: 7rem; }
+.card-new2:hover .line-new2 { width: 7rem; }
+.card-new3:hover .line-new3 { width: 7rem; }
+.card-new4:hover .line-new4 { width: 7rem; }
+/* ////////////////////////////  end new  /////////////////////////////////////////////// */
+
+/* /// start join //// */
+.item-join{
+    width: 17rem;
+    height: 16rem;
+}
+.item-join i{
+    font-size: 8rem;
+}
+.item-join a {
+  text-decoration: none;
+  color: rgb(24, 24, 24); /* أو أي لون تحبيه */
+}
+/* ///////////////////////////////////////////////////////////////////// */
+
+.footer-sec {
+    width: 100%;
+    height: 22rem;   /* علشان يفضل مرن */
+    background-color: #ab7fc1;  /* اللون الأزرق السماوي زي التصميم */
+    color: #fff;
+    margin-top: 1rem;
+}
+
+.footer-line { 
+    margin: 10px 0;
+}
+
+.footer-sec h3 {
+    font-weight: bold;
+    display: block; /* علشان يبقى تحت الصورة */
+}
+
+.footer-sec img {
+    border: 3px solid #fff;
+    box-shadow: 0 0 15px rgba(255,255,255,0.7);
+}
+
+.footer-sec p {
+    margin: 5px 0; 
+}
+
+.footer-sec a { 
+    text-decoration: none;
+}
