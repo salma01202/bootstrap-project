@@ -10,13 +10,12 @@
  background-color: rgb(255, 179, 249); 
  opacity: 0.6;
 }
-.navbar {
-  background-color: rgba(255, 255, 255, 0.8) !important;
-}
 
 .header-actions .btn:hover{
   background-color:rgb(207, 172, 207)!important; 
 }
+
+
 .modal-footer .btn{
   background-color: rgb(181, 114, 181);
   color: #fff;
@@ -39,6 +38,22 @@
   border-color: transparent !important;
   box-shadow: grey !important;
 }
+
+.custom-navbar {
+  background-color: rgba(255, 255, 255, 0.6); /* شفاف */
+  backdrop-filter: blur(6px); /* ضبابية بسيطة */
+  z-index: 1030; /* أقل من المودال */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* ظل خفيف */
+}
+
+.modal {
+  z-index: 2000; /* المودال فوق الهيدر */
+}
+
+body.modal-open {
+  padding-right: 0 !important; /* يمنع مشكلة التمرير */
+}
+
 
 /* اللون عند التحديد */
 .form-check-input:checked {
